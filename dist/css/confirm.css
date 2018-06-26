@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff2fb;
+  font-family: 'Indie Flower'; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .container .thanks {
+    margin: auto;
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 200px;
+    background-color: #fcfbd1;
+    border: 10px solid white;
+    border-radius: 50%;
+    padding: 1em;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33); }
+  .container .get-back {
+    border: 10px solid white;
+    margin: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #c1e4ff;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33); }
+    .container .get-back p {
+      text-align: center;
+      padding: 12px; }
+    .container .get-back form {
+      text-align: center;
+      margin-top: 24px;
+      background-color: #fcfbd1;
+      border-radius: 50px;
+      width: 100px; }
+
+@media screen and (min-width: 600px) {
+  html,
+  body {
+    font-size: 36px; } }

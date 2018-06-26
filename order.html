@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Lala's Cakes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Lalas Cakes. Local business operating in Miami, Florida. Cakes for any celebration including Quinces, Birthdays, and graduations."> 
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="dist/css/form.css">
+</head>
+<body>
+	<header>
+		<div class='heading'>
+			<img class='logo' src='images/home/logo.png' alt='Lalas Cakes logo' width='200' height='100'> 
+			<span class='menu-icon'> ☰ </span>
+		</div>
+		<nav class='menu'>
+			<div class='nav-bar'>
+				<span class='fa fa-close'> </span>
+				<p> <a class='links-1' href='index.html'> home </a> </p>
+				<p> <a class='links-1' href='cakes.html'> cakes </a> </p>
+				<p> <a class='links-1' href='flavors.html'> flavors </a> </p>
+				<p id='current-link'> <a class='links-1' href='quote.html'> quote </a> </p>
+				<p> <a class='links-1' href='order.html'> order </a> </p>
+			</div>
+		</nav>	
+	</header>
+	<main>
+		<div id='place-order'> Place an Order: </div>
+		<form action="https://formspree.io/lalasscakess@gmail.com" method="POST">
+			<div id='name-box'>
+				<label for='name'> Name: </label>
+				<input id='name' type="text" name="name" required> 
+			</div>
+			<div id='email-box'>
+				<label for='email'> Email: </label>
+				<input id='email' type="email" name="_replyto" required>
+			</div>
+			<div id='phone-box'>
+				<label for='phone'> Phone #: </label>
+				<input id='phone' type="tel" name="phone">
+			</div>
+			<div id='date-box'>
+				<label for='due-date'> Due date: </label>
+				<input id='due-date' type="date" name="due date" required>
+			</div>
+			<div id='flavor-box'>
+				<label for='flavor'> Flavor: </label>
+				<input id='flavor' type="text" name="flavor" required>
+			</div>
+			<div id='theme-box'>
+				<label for='theme'> Theme: </label>
+				<input id='theme' type="text" name="theme">
+			</div>
+			<div id='order-box'>
+				<label for='order'> Description:  </label>
+				<textarea id='order' name='quote' required></textarea>
+			</div>
+			<input id='submit' type="submit" value="Place Order">
+			<input type="hidden" name="_next" value="confirm.html" />  
+			<input type="hidden" name="_subject" value="New Order" />
+		</form>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="dist/js/script.js"></script>
+</body>
+</html>
