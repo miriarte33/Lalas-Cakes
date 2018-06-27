@@ -1,15 +1,13 @@
-"use strict";
-
 $(function () {
-  var menuIcon = document.querySelector('.menu-icon');
-  var closeMenuIcon = document.querySelector('.fa-close');
-  menuIcon.addEventListener('click', function (evt) {
+  let menuIcon = document.querySelector('.menu-icon');
+  let closeMenuIcon = document.querySelector('.fa-close');
+  menuIcon.addEventListener('click', evt => {
     evt.preventDefault();
     $('.menu').toggleClass('open');
     $('.heading').toggleClass('close');
     $('html').css('touch-action', 'none');
   });
-  closeMenuIcon.addEventListener('click', function (evt) {
+  closeMenuIcon.addEventListener('click', evt => {
     evt.preventDefault();
     $('.menu').toggleClass('open');
     $('.heading').toggleClass('close');

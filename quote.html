@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="dist/css/form.css">
+	<script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.3.0/uploadcare.full.min.js"></script>
 </head>
 <body>
 	<header>
@@ -46,7 +47,16 @@
 			</div>
 			<div id='flavor-box'>
 				<label for='flavor'> Flavor: </label>
-				<input id='flavor' type="text" name="flavor" required>
+				<select name="flavor">
+				   <option value="white">White</option>
+				   <option value="yellow">Yellow</option>
+				   <option value="chocolate">Chocolate</option>
+				   <option value="funfetti">Funfetti</option>
+				   <option value="red-velvet">Red Velvet</option>
+				   <option value="pink-velvet">Pink Velvet</option>
+				   <option value="chocolate-chip">Chocolate Chip</option>
+				   <option value="sugar-cookie">Sugar Cookie</option>
+				</select>
 			</div>
 			<div id='theme-box'>
 				<label for='theme'> Theme: </label>
@@ -55,6 +65,10 @@
 			<div id='quote-box'>
 				<label for='quote'> Description:  </label>
 				<textarea id='quote' name='quote' required></textarea>
+			</div>
+			<div>
+			   <label for='pic'> Supplementary Image: </label>
+			   <input type="hidden" role="uploadcare-uploader" name="image" data-public-key="ec5b78ee8a4e176b23d4" data-images-only />
 			</div>
 			<input id='submit' type="submit" value="Send Quote">
 			<input type="hidden" name="_next" value="confirm.html" />  

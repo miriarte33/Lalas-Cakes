@@ -1,12 +1,10 @@
-"use strict";
-
 $(function () {
   //function for my image slideshow
   //learned from https://www.w3schools.com/w3css/w3css_slideshow.asp
   function slideShow() {
-    var images = document.getElementsByClassName('slide-show');
+    let images = document.getElementsByClassName('slide-show');
 
-    for (var i = 0; i < images.length; i++) {
+    for (let i = 0; i < images.length; i++) {
       images[i].style.display = 'none';
     }
 
@@ -20,21 +18,21 @@ $(function () {
     setTimeout(slideShow, 2000);
   }
 
-  var menuIcon = document.querySelector('.menu-icon');
-  var closeMenuIcon = document.querySelector('.fa-close');
-  var index = 0;
+  let menuIcon = document.querySelector('.menu-icon');
+  let closeMenuIcon = document.querySelector('.fa-close');
+  let index = 0;
 
   if ($(window).width() <= 450) {
     slideShow();
   }
 
-  menuIcon.addEventListener('click', function (evt) {
+  menuIcon.addEventListener('click', evt => {
     evt.preventDefault();
     $('.menu').toggleClass('open');
     $('.heading').toggleClass('close');
     $('html').css('touch-action', 'none');
   });
-  closeMenuIcon.addEventListener('click', function (evt) {
+  closeMenuIcon.addEventListener('click', evt => {
     evt.preventDefault();
     $('.menu').toggleClass('open');
     $('.heading').toggleClass('close');
