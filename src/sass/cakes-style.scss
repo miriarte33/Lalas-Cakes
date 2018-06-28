@@ -156,6 +156,13 @@ nav.open {
 	background-image: url('../../images/cakes/car.jpeg'); 
 }
 
+#thanks {
+	background-image: url('../../images/cakes/thanks.jpeg');
+	&:hover {
+		background-image: url('../../images/cakes/thanks-hover.jpeg'); 
+	}
+}
+
 @media screen and (min-width: 600px) {
 	nav.menu {
 		position: initial;
