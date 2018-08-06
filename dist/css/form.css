@@ -118,7 +118,6 @@ form {
   margin-top: 1em;
   background-color: #fff2fb; }
 
-#get-quote,
 .place-order {
   margin: 12px;
   text-align: center;
@@ -182,8 +181,7 @@ form {
       width: 730px; }
   .menu div.nav-bar p {
     font-size: 33px; }
-  #get-quote,
-  #place-order {
+  .place-order {
     width: 300px;
     margin: 1em auto 1em auto; }
   form {
