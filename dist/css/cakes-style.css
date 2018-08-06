@@ -94,8 +94,8 @@ nav.open {
       flex-wrap: wrap; }
   .cake-pics div {
     margin: 24px auto 24px auto;
-    -webkit-transition: background-image 1s ease;
-    transition: background-image 1s ease;
+    -webkit-transition: background-image 0.5s ease;
+    transition: background-image 0.5s ease;
     background-size: cover;
     background-position: center;
     width: 350px;
@@ -146,6 +146,14 @@ nav.open {
   background-image: url("../../images/cakes/thanks.jpeg"); }
   #thanks:hover {
     background-image: url("../../images/cakes/thanks-hover.jpeg"); }
+
+#splatter {
+  background-image: url("../../images/cakes/splatter-cake.jpeg"); }
+
+#friends {
+  background-image: url("../../images/cakes/friends.jpeg"); }
+  #friends:hover {
+    background-image: url("../../images/cakes/friends-hover.jpeg"); }
 
 @media screen and (min-width: 600px) {
   nav.menu {
